@@ -91,7 +91,7 @@ class LeadController extends Controller
         }
 
         if (in_array($stage->code, ['won', 'lost'])) {
-            $data['closed_at'] = Carbon::now();
+            //$data['closed_at'] = Carbon::now();
         }
 
         $lead = $this->leadRepository->create($data);
